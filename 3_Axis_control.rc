@@ -1,0 +1,305 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\3_Axis_control.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\3_Axis_control.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 3_Axis_control"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "3_Axis_control 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY3_AXIS_CONTROL_DIALOG DIALOGEX 0, 0, 745, 372
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "3_Axis_control"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "初始化",IDC_INIT,35,16,56,26
+    PUSHBUTTON      "关闭伺服",IDC_SHUTDOWN_SERVO,111,16,54,25
+    PUSHBUTTON      "退出系统",IDC_QUIT,184,16,53,26
+    PUSHBUTTON      "X+",IDC_X_PLUS,36,80,50,25
+    PUSHBUTTON      "X-",IDC_X_MINUS,96,80,50,26
+    PUSHBUTTON      "Y+",IDC_Y_PLUS,36,113,50,24
+    PUSHBUTTON      "Y-",IDC_Y_MINUS,96,113,50,26
+    PUSHBUTTON      "Z+",IDC_Z_PLUS,36,144,50,25
+    PUSHBUTTON      "Z-",IDC_Z_MINUS,96,144,50,25
+    EDITTEXT        IDC_step_speed,217,93,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_step_distance,217,124,40,14,ES_AUTOHSCROLL
+    LTEXT           "加/减速大小：",IDC_STATIC,159,95,53,8
+    LTEXT           "单步运动距离：",IDC_STATIC,159,125,57,8
+    PUSHBUTTON      "开始加工",IDC_START_PROCESS,38,218,59,21
+    PUSHBUTTON      "停止当前轴",IDC_STOP_PROCESS,37,250,59,20
+    LTEXT           "轴号选择：",IDC_STATIC,127,218,41,8
+    LTEXT           "加/减速大小：",IDC_STATIC,127,250,53,8
+    LTEXT           "运动距离：",IDC_STATIC,127,284,41,8
+    EDITTEXT        IDC_ACC_and_DCC,184,247,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DISTANCE,184,278,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_AXIS_NUM,184,215,52,58,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "停止全部轴",IDC_STOP_ALL_AXIS,37,284,60,22
+    GROUPBOX        "手动调整位置",IDC_STATIC,25,59,262,118
+    GROUPBOX        "加工实验",IDC_STATIC,27,193,259,122
+    CONTROL         "",IDC_TCHART1,"{BDEB0088-66F9-4A55-ABD2-0BF8DEEC1196}",
+                    WS_TABSTOP,305,19,412,238
+    PUSHBUTTON      "开始绘图",IDC_StartDrawing,506,280,58,25
+    PUSHBUTTON      "停止绘图",IDC_StopDrawing,576,280,61,25
+    PUSHBUTTON      "清除图像",IDC_CleanPicture,654,280,57,25
+    LTEXT           "加工电压：",IDC_STATIC,312,291,41,8
+    EDITTEXT        IDC_EDIT1,361,289,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "更新数据",IDC_BUTTON4,418,288,50,14
+    GROUPBOX        "加工参数设置",IDC_STATIC,302,268,181,51
+    PUSHBUTTON      "H",IDC_PROCESS_H,43,333,50,14
+    PUSHBUTTON      "I",IDC_PROCESS_I,102,333,50,14
+    PUSHBUTTON      "T",IDC_PROCESS_T,161,334,50,14
+    PUSHBUTTON      "停止加工",IDC_STOPHIT,234,333,50,14
+    PUSHBUTTON      "测试直线插补",IDC_TEST_LINE_INTERPOLATION,310,334,56,14
+    PUSHBUTTON      "测试圆弧插补",IDC_TEST_CIRCLE_INTERPOLATION,375,333,50,
+                    14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "3_Axis_control Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "3_Axis_control\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "3_Axis_control.EXE\0"
+            VALUE "ProductName", "3_Axis_control 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY3_AXIS_CONTROL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 738
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 365
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MY3_AXIS_CONTROL_DIALOG DLGINIT
+BEGIN
+    IDC_AXIS_NUM, 0x403, 2, 0
+0x0031, 
+    IDC_AXIS_NUM, 0x403, 2, 0
+0x0032, 
+    IDC_AXIS_NUM, 0x403, 2, 0
+0x0034, 
+    IDC_TCHART1, 0x376, 764, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x540b, 0x6843, 0x7261, 0x4374, 0x6168, 
+0x7472, 0x0400, 0x654c, 0x7466, 0x0002, 0x5403, 0x706f, 0x0002, 0x5705, 
+0x6469, 0x6874, 0x6a03, 0x0602, 0x6548, 0x6769, 0x7468, 0x6503, 0x1001, 
+0x6142, 0x6b63, 0x6d49, 0x6761, 0x2e65, 0x6e49, 0x6973, 0x6564, 0x1209, 
+0x6954, 0x6c74, 0x2e65, 0x6554, 0x7478, 0x532e, 0x7274, 0x6e69, 0x7367, 
+0x1401, 0x0012, 0x0000, 0xaee5, 0xe69e, 0xb697, 0xb7e8, 0xe5af, 0x84be, 
+0xbde8, 0xe8a8, 0xb9bf, 0x1200, 0x654c, 0x7466, 0x7841, 0x7369, 0x412e, 
+0x7475, 0x6d6f, 0x7461, 0x6369, 0x1908, 0x654c, 0x7466, 0x7841, 0x7369, 
+0x412e, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x614d, 0x6978, 0x756d, 0x086d, 
+0x4c19, 0x6665, 0x4174, 0x6978, 0x2e73, 0x7541, 0x6f74, 0x616d, 0x6974, 
+0x4d63, 0x6e69, 0x6d69, 0x6d75, 0x1008, 0x654c, 0x7466, 0x7841, 0x7369, 
+0x4d2e, 0x7861, 0x6d69, 0x6d75, 0x0005, 0x0000, 0x0000, 0x4000, 0x0b9c, 
+0x1040, 0x654c, 0x7466, 0x7841, 0x7369, 0x4d2e, 0x6e69, 0x6d69, 0x6d75, 
+0x0005, 0x0000, 0x0000, 0x0000, 0x05c8, 0x06c0, 0x6956, 0x7765, 0x4433, 
+0x0008, 0x540f, 0x6146, 0x7473, 0x694c, 0x656e, 0x6553, 0x6972, 0x7365, 
+0x5307, 0x7265, 0x6569, 0x3073, 0x4d13, 0x7261, 0x736b, 0x412e, 0x7272, 
+0x776f, 0x562e, 0x7369, 0x6269, 0x656c, 0x1909, 0x614d, 0x6b72, 0x2e73, 
+0x6143, 0x6c6c, 0x756f, 0x2e74, 0x7242, 0x7375, 0x2e68, 0x6f43, 0x6f6c, 
+0x0772, 0x6307, 0x426c, 0x616c, 0x6b63, 0x4d1b, 0x7261, 0x736b, 0x432e, 
+0x6c61, 0x6f6c, 0x7475, 0x412e, 0x7272, 0x776f, 0x562e, 0x7369, 0x6269, 
+0x656c, 0x0d09, 0x614d, 0x6b72, 0x2e73, 0x6956, 0x6973, 0x6c62, 0x0865, 
+0x5405, 0x7469, 0x656c, 0x0412, 0x0000, 0xee00, 0x0776, 0x6868, 0xf98f, 
+0x0d8f, 0x694c, 0x656e, 0x6550, 0x2e6e, 0x6f43, 0x6f6c, 0x0772, 0x6305, 
+0x526c, 0x6465, 0x580c, 0x6156, 0x756c, 0x7365, 0x4e2e, 0x6d61, 0x0665, 
+0x5801, 0x580d, 0x6156, 0x756c, 0x7365, 0x4f2e, 0x6472, 0x7265, 0x0b07, 
+0x6f6c, 0x7341, 0x6563, 0x646e, 0x6e69, 0x0c67, 0x5659, 0x6c61, 0x6575, 
+0x2e73, 0x614e, 0x656d, 0x0106, 0x0d59, 0x5659, 0x6c61, 0x6575, 0x2e73, 
+0x724f, 0x6564, 0x0772, 0x6c06, 0x4e6f, 0x6e6f, 0x0065, 0x0f00, 0x4654, 
+0x7361, 0x4c74, 0x6e69, 0x5365, 0x7265, 0x6569, 0x0773, 0x6553, 0x6972, 
+0x7365, 0x1331, 0x614d, 0x6b72, 0x2e73, 0x7241, 0x6f72, 0x2e77, 0x6956, 
+0x6973, 0x6c62, 0x0965, 0x4d19, 0x7261, 0x736b, 0x432e, 0x6c61, 0x6f6c, 
+0x7475, 0x422e, 0x7572, 0x6873, 0x432e, 0x6c6f, 0x726f, 0x0707, 0x6c63, 
+0x6c42, 0x6361, 0x1b6b, 0x614d, 0x6b72, 0x2e73, 0x6143, 0x6c6c, 0x756f, 
+0x2e74, 0x7241, 0x6f72, 0x2e77, 0x6956, 0x6973, 0x6c62, 0x0965, 0x4d0d, 
+0x7261, 0x736b, 0x562e, 0x7369, 0x6269, 0x656c, 0x0508, 0x6954, 0x6c74, 
+0x1265, 0x0004, 0x0000, 0x5b9e, 0x9645, 0x8f68, 0x8ff9, 0x4c0d, 0x6e69, 
+0x5065, 0x6e65, 0x432e, 0x6c6f, 0x726f, 0x0707, 0x6c63, 0x7247, 0x6565, 
+0x0c6e, 0x5658, 0x6c61, 0x6575, 0x2e73, 0x614e, 0x656d, 0x0106, 0x0d58, 
+0x5658, 0x6c61, 0x6575, 0x2e73, 0x724f, 0x6564, 0x0772, 0x6c0b, 0x416f, 
+0x6373, 0x6e65, 0x6964, 0x676e, 0x590c, 0x6156, 0x756c, 0x7365, 0x4e2e, 
+0x6d61, 0x0665, 0x5901, 0x590d, 0x6156, 0x756c, 0x7365, 0x4f2e, 0x6472, 
+0x7265, 0x0607, 0x6f6c, 0x6f4e, 0x656e, 0x0000, 0x0000, 0x0000, 0x0200, 
+0x0000, 0x0000, 0xffff, 0xffff, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 3_Axis_control(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\3_Axis_control.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
